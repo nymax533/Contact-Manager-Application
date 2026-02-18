@@ -12,10 +12,10 @@ namespace Contact_Manager_Application.Services
 {
     public class ContactService : IContactService
     {
-        private readonly IContactRepository _contactRepository;
+        private readonly IRepository<Contact> _contactRepository;
         private readonly ILogger<ContactService> _logger;
 
-        public ContactService(IContactRepository contactRepository, ILogger<ContactService> logger)
+        public ContactService(IRepository<Contact> contactRepository, ILogger<ContactService> logger)
         {
             _contactRepository = contactRepository;
             _logger = logger;

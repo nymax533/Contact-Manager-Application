@@ -14,7 +14,6 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
-builder.Services.AddScoped<IContactRepository, ContactRepository>();
 
 
 builder.Services.AddScoped<IContactService, ContactService>();
