@@ -11,6 +11,5 @@ namespace Contact_Manager_Application.Repositories
         Task UpdateAsync(T entity);
         Task DeleteAsync(int id);
         Task<bool> ExistsAsync(int id);
-        Task<IEnumerable<T>> FindAsync(Expression<Func<T, bool>> predicate);
     }
 }
